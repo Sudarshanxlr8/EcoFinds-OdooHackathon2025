@@ -1,89 +1,56 @@
-🌱 EcoFinds – Sustainable Second-Hand Marketplace
+# 🌿 EcoFind Marketplace
+Welcome to Eco Marketplace – Your go-to platform for sustainable shopping! Discover eco-friendly products, support green sellers, and make a positive impact on the planet. Built with modern web technologies, this app combines seamless user experience with robust backend features.
 
-EcoFinds is a vibrant and trusted platform that empowers sustainable consumption by enabling people to buy and sell pre-owned goods.
-The project was built for Odoo Hackathon 2025, focusing on extending product lifecycles, reducing waste, and fostering responsible consumption.
+## 🚀 Quick Start
+Get up and running in minutes!
 
-🚀 Challenge
+1. 1.
+   Clone the Repo :
+   
+   ```
+   git clone https://github.com/
+   yourusername/eco-marketplace.git
+   cd eco-marketplace
+   ```
+2. 2.
+   Install Dependencies :
+   
+   ```
+   pip install -r requirements.txt
+   ```
+3. 3.
+   Set Up Database : Configure MongoDB in config.py .
+4. 4.
+   Launch the App :
+   
+   ```
+   python app.py
+   ```
+   Visit http://localhost:5000 and start exploring!
+## ✨ Highlighted Features
+- 🔒 Secure Authentication : Easy signup/login with JWT – keep your data safe!
+- 🛒 Product Discovery : Browse a vibrant grid of sustainable products with filters by category.
+- 📸 Detailed Views : Zoom into product details, images, descriptions, and quick add-to-cart.
+- 🛍️ Smart Cart : Manage items, calculate totals, and checkout with a fun confirmation popup.
+- 📜 Purchase History : Review past buys with dates, items, and totals at a glance.
+- 📢 Seller Tools : Add and manage your listings effortlessly via a user-friendly interface.
+- 🎭 Demo Mode : Load static dummy data for quick testing and video demos – no backend needed!
+- 📂 File Uploads : Seamless image uploads for products.
+- 💾 MongoDB Backend : Reliable storage for all data.
+## 🛠️ Tech Stack
+- Backend : Flask & Python – Powerful and lightweight.
+- Frontend : HTML, Tailwind CSS, JavaScript – Responsive and stylish.
+- Database : MongoDB – Flexible and scalable.
+- Extras : CORS, JWT, PyMongo – For secure, cross-origin API calls.
+## 📂 Project Structure
+- app.py : Core app with routes and setup.
+- backend/ : API logic (controllers, models, routes).
+- frontend/templates/ : Beautiful HTML pages.
+- frontend/static/ : Assets like CSS, JS, and images.
+## 🤝 Contributing
+Love sustainability? Join us! Fork the repo, make changes, and submit a pull request. Check issues for ideas.
 
-“EcoFinds – Empowering Sustainable Consumption through a Second-Hand Marketplace”
+## 📄 License
+MIT – Free to use and modify. See LICENSE for details.
 
-🌍 Overall Vision
-
-EcoFinds aims to revolutionize the way people reuse goods by providing an accessible, user-friendly platform where buyers and sellers connect. It envisions becoming the go-to marketplace for conscious consumers seeking unique finds and responsible alternatives to buying new items.
-
-🎯 Mission
-
-Build a desktop + mobile-friendly application.
-
-Provide secure authentication, product listings, browsing, and purchasing.
-
-Deliver an intuitive, sustainable, and community-driven experience.
-
-✨ Core Features
-
-✅ User Authentication (Sign up/login with secure storage)
-✅ Profile Management (Basic dashboard, editable profile)
-✅ Product Listings (CRUD) (Add, update, delete, browse items)
-✅ Product Browsing (List view with filters and search)
-✅ Category Filtering & Keyword Search
-✅ Product Detail View (Full details page)
-✅ Cart (Add/remove products)
-✅ Previous Purchases View (Track purchase history)
-
-🛠️ Tech Stack
-
-Frontend: HTML, TailwindCSS, JavaScript
-Backend: Python Flask
-Database: MongoDB Atlas (Mongoose-like ODM via PyMongo)
-Authentication: JWT + Bcrypt (secure password storage)
-
-📂 Folder Structure
-EcoFinds/
-│── frontend/
-│   ├── index.html
-│   ├── assets/
-│   │   ├── css/ (Tailwind setup)
-│   │   ├── js/  (Frontend scripts)
-│   └── pages/   (Login, Dashboard, Listings, Cart, Purchases)
-│
-│── backend/
-│   ├── app.py            # Flask entry point
-│   ├── routes/           # API routes
-│   ├── models/           # MongoDB schemas
-│   ├── controllers/      # Business logic
-│   ├── utils/            # Auth, validation, helpers
-│   └── requirements.txt
-│
-│── README.md
-
-⚙️ Installation & Setup
-1️⃣ Clone Repository
-git clone https://github.com/yourusername/ecofinds.git
-cd ecofinds
-
-2️⃣ Setup Backend (Flask)
-cd backend
-python -m venv venv
-source venv/bin/activate   # (Linux/Mac)
-venv\Scripts\activate      # (Windows)
-pip install -r requirements.txt
-
-
-Run Flask server:
-
-python app.py
-
-3️⃣ Setup Frontend
-
-Open frontend/index.html in your browser OR serve using a simple server:
-
-cd frontend
-python -m http.server 8000
-
-4️⃣ MongoDB Setup
-
-Create a MongoDB Atlas Cluster.
-
-Add connection string to backend/config.py.
-
-Collections: users, products, carts, purchases.
+Built with ❤️ for a greener world!
